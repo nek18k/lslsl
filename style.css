@@ -1,0 +1,573 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+}
+.border_position{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 70vw;
+}
+
+/**********Main page************/
+header{
+    
+    width: 100vw;
+    height: 100vh;
+    background: url(img/baground.png);
+    background-size: cover;
+    
+}
+html{
+    overflow-x: hidden;
+}
+.main_page_wrapper {
+    
+}
+.top-bar{
+    border-bottom: 2px white solid;
+    
+}
+.menu_container {
+   
+    padding: 22px 0;
+
+    margin: 0 auto;
+}
+.menu_container_logo>img{
+    width: 79px;
+    height: 75px;
+}
+.menu_container_link {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.menu_container_link>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+    
+    margin:0 13px ;
+    position: relative;
+}
+
+.menu_container_link>li>a::after{
+    content: '';
+    position: absolute;
+    background-color: #11749e;
+    
+    left: 0;
+    width: 100%;
+    height: 5px;
+    bottom: -205%;
+    opacity: 0;
+    transition:all 0.2s ;
+}
+.menu_container_link>li>a:hover::after{
+    
+    opacity: 1;
+}
+
+
+.menu_container_logo {
+    
+    
+}
+.btn-menu-position {
+    /* display: none; */
+}
+.btn-menu {
+    
+    display:none;
+    
+
+    border: white 1px solid;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    text-decoration: none;
+    background-color: transparent;
+    user-select: none;
+    outline: none;
+    color: white;
+}
+
+
+.menu_container_icons {
+}
+.main_page_title_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 70vh;
+    
+}
+.main_page_title {
+    color: white;
+    font-size: 152px;
+}
+.main_page_sub-title {
+    font-size: 25px;
+    color: #11749e;
+    
+    
+}
+
+.main_page_btn_position {
+    display: flex;
+    justify-content: center;
+    
+}
+.main_page_btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white 1px solid;
+    width: 66px;
+    height: 66px;
+    border-radius: 100%;
+    text-decoration: none;
+    background-color: transparent;
+    user-select: none;
+    outline: none;
+    color: white;
+    font-size: 28px;
+    bottom: 20px;
+    
+}
+
+/********************Синий блок*****************/
+#but_block{
+    display: none;
+}
+.agency_wrapper {
+    padding-top: 90px;
+    background-color: #11749e;
+    width: 100vw;
+    height: 740px;
+    
+}
+.agency_title_position {
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 15px;
+   
+}
+.agency_title {
+    color: white;
+
+    height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    font-size: 37px;
+    background: url(img/W.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 185px 175px;
+    
+   
+}
+
+.agency_block_container {
+    height: 450px;
+    margin: 0 auto;
+    text-align: center;
+}
+.agency_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.agency_block_title{
+    font-weight: 500;
+    
+    font-size: 21px;
+}
+.agency_block_subtitle{
+    font-size: 16px;
+}
+.agency_block_img {
+    height: 133px;
+    width: 137px;
+    border-radius: 100%;
+    background-color: white;
+    opacity: .3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 37px;
+    font-weight: 500;
+    
+    margin: 0 auto 20px;
+}
+.block_inner-padding{
+    
+    padding: 0 15px 20px;
+    
+    max-width: 270px;
+    color: white;
+    
+}
+/* about us */
+.abou-us_wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+.about-us_higher {
+    height: 50vh;
+    display: flex;
+}
+.black-block {
+    height: 50vh;
+    width: 50vw;
+    color: white;
+    background-color: #222222;
+    order: 1;
+    padding-left: 215px;
+    padding-right: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.about-us_date {
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+.about-us_title {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 45px;
+    font-weight: 500;
+}
+.about-us_subtitle {
+    margin-bottom: 35px;
+    font-size: 15px;
+}
+.about-us_higher>.about-us_picrtures{
+    order: 2;
+}
+
+.about-us_lower {
+    height: 50vh;
+    display: flex;
+}
+.white-block {
+    height: 50vh;
+    width: 50vw;
+    background-color: #f3f3f3;
+    order: 1;
+    padding-right: 215px;
+    padding-left: 75px;
+    display: flex;
+    align-items: center;
+}
+.about-us_picrtures {
+    height: 50vh;
+    width: 50vw;
+}
+.about-us_text {
+    
+    
+}
+.white-block>.about-us_picrtures{
+    order: 2;
+}
+.about-us_picrtures>img{
+    height: 50vh;
+    width: 50vw;
+}
+/* adaptive */
+@media screen and (max-height: 800px){
+    .main_page_title{
+        font-size: 120px;
+    }
+    .main_page_btn{
+        width: 46px;
+        height: 46px;
+        font-size: 19px;
+    }
+    .main_page_sub-title{
+        font-size: 17px;
+    }
+    .menu_container_link>li>a{
+        font-size: 18px;
+    }
+    .menu_container_link>li>a::after{
+        bottom: -198%;
+    }
+    .menu_container_logo>img{
+        width: 65px;
+        height: 61px;
+    }
+}
+@media screen and (max-width: 1500px){
+    .agency_block_container{
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .agency_wrapper{
+        height: 960px;
+    }
+    .agency_title{
+        font-size: 28px;
+        background-size: 150px 145px;
+    }
+    .agency_wrapper{
+        padding-top: 50px;
+       
+    }
+    .agency_block_title{
+        font-size: 17px;
+    }
+    .agency_block_subtitle{
+        font-size: 15px;
+
+    }
+    .agency_block_img{
+        
+        width: 107px;
+        height: 103px;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+    .border_position{
+        max-width: 64vw;
+        width: 100%;
+    }
+    .main_page_title{
+        font-size: 122px;
+    }
+    .main_page_sub-title{
+        font-size: 20px;
+    }
+    .menu_container_link>li>a{  
+        font-size: 17px;
+    }
+    .menu_container_logo>img{
+        width: 69px;
+    height: 65px;
+    }
+    .menu_container_link>li>a::after{
+        bottom: -230%;
+    }
+        
+}
+@media screen and (max-width: 1100px){
+    .border_position{
+        max-width: 64vw;
+        width: 100%;
+    }
+    .main_page_title{
+        font-size: 122px;
+    }
+    .main_page_sub-title{
+        font-size: 20px;
+    }
+    .menu_container_link>li>a{  
+        font-size: 17px;
+    }
+    .menu_container_logo>img{
+        width: 69px;
+    height: 65px;
+    }
+    .top-bar>.border_position{
+        max-width: 70vw;
+        width: 100%;
+    }   
+    .agency_title{
+        
+        font-size: 24px;
+        background-size: 100px 95px;
+    } 
+    /* about-us */
+    
+    .about-us_higher>.about-us_picrtures{
+       
+    }
+    .black-block{
+        
+        width: 100vw;
+        padding: 20px 215px 20px 75px;
+        
+        height: 50vh;
+    }
+    .abou-us_wrapper{
+      display: flex;
+      flex-direction: column;
+        
+    }
+    .about-us_lower>.about-us_picrtures{
+       
+        
+    }
+    .about-us_picrtures>img{
+        width: 100vw;
+        height: 50vh;
+    }
+    .white-block{
+        
+        height: 50vh;
+        width: 100vw;
+        
+    }
+    .about-us_higher{
+        flex-direction: column-reverse;
+        
+        max-height:100vh ;
+        height: 100%;
+    }
+    .abou-us_wrapper{
+        height: 200vh;
+    }
+    .about-us_lower{
+        flex-direction: column;
+        
+        max-height:100vh ;
+        height: 100%;
+    }
+}
+@media screen and (max-width:768px){
+    .menu_container_link{
+        display: none;
+    }
+    .btn-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+    }
+    .main_page_title{
+        font-size: 92px;
+    }
+    .agency_wrapper>.border_position{
+        justify-content: center;
+        
+    }
+    .menu_container_logo>img{
+        width: 55px;
+        height: 51px;
+    }
+    /* .agency_title{
+        font-size: 24px;
+        background-size: 90px 85px;
+    } */
+    .agency_wrapper{
+        padding-top: 25px;
+        height: 1580px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .menu_container_link{
+        display: none;
+    }
+    .btn-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+    }
+    .menu_container_logo>img{
+        width: 45px;
+        height: 41px;
+    }
+    .menu_container{
+        padding: 15px 0;
+    }
+    .main_page_title{
+        font-size: 60px;
+    }
+    .main_page_sub-title{
+        font-size: 15px;
+    }
+    .agency_wrapper{
+        padding-top: 50px;
+        height: 1250px;
+    }
+    .agency_title{
+        
+        font-size: 18px;
+        background-size: 100px 95px;
+    }
+    .agency_block_container{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .agency_block_subtitle{
+       
+    }
+    .agency_block_img{
+        margin-bottom: 15px;
+        width: 87px;
+        height: 83px;
+    }
+    .agency_block_title{
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+    .agency_block_subtitle{
+        font-size: 12px;
+    }
+    .border_position{
+        max-width:  80vw; 
+    }
+    .agency_title_position{
+        padding: 0 0 12px;
+    }
+    /* About us */
+    .black-block{
+        padding: 20px;
+    }
+    .white-block{
+        padding: 20px;
+    }
+    .about-us_date{
+    font-size: 10px;
+    margin-bottom: 10px;
+    }
+    .about-us_title{
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    }
+    .about-us_subtitle{
+    margin-bottom: 12px;
+    font-size: 12px;
+    }
+
+}
+@media screen and (max-width: 320px){
+.main_page_title{
+    font-size: 50px;
+}
+.agency_wrapper{
+    height: 1280px;
+}
+}
